@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: url("../img/4.png");
+    background-size: 100% 100%;
+}
+.swiper-container {
+    width: 100vw;
+    height: 30vh;
+}
+.type{
+    width: 100%;
+    height: 10vh;
+}
+.project,.done{
+    width: 50%;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    /*background: #333;*/
+    font-weight: bold;
+    background: rgba(51,51,51,0.7);
+}
+.project.active{
+    /*background: #00b262;*/
+    background: rgba(0,178,98,0.7);
+}
+.done.active{
+    /*background: #00b262;*/
+    background: rgba(0,178,98,0.7);
+
+}
+.content{
+    width: 100vw;
+    height: 50vh;
+    background: rgba(255,255,255,0.4);
+    /*overflow: auto;!*实现内容滚动*!*/
+    overflow: hidden;
+    position: relative;
+/*//如果有滚动条，就需要加定位*/
+}
+.content ul{
+    width: 100vw;
+    height: auto;
+}
+.content ul li{
+    width: 100vw;
+    height: 10vh;
+    border-bottom: 1px solid #eee;
+
+}
+.content ul li p{
+    width: 60vw;
+    height: 10vh;
+    /*background: lightcyan;*/
+    float: left;
+    background: rgba(244,255,255,0.7);
+    line-height: 10vh;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.content ul li time{
+    width: 30vw;
+    height: 10vh;
+    float: left;
+    line-height: 5vh;
+    /*background: lightcyan;*/
+    background: rgba(244,255,255,0.7);
+
+}
+.content ul li span{
+    width: 10vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    float: left;
+    /*background: lightcyan;*/
+    background: rgba(244,255,255,0.7);
+
+}
+.add{
+    width: 100vw;
+    height: 10vh;
+    /*background:#2c2c2c;*/
+    background: rgba(44,44,44,0.7);
+    font-size: 26px;
+    line-height: 10vh;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+.mask{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background: rgba(0,0,0,0.65);
+    display: none;
+}
+#text{
+    width: 100vw;
+    height: 40vh;
+    border: none;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+}
+.submit{
+    width: 100vw;
+    height: 10vh;
+    color: #fff;
+    text-align: center;
+    line-height: 10vh;
+    background: #FF0036;
+}
+.update{
+    display: none;
+    width: 100vw;
+    height: 10vh;
+    color: #fff;
+    text-align: center;
+    line-height: 10vh;
+    background: #FF0036;
+}
+.cancel{
+    width: 6vh;
+    height: 6vh;
+    line-height: 6vh;
+    margin:3vh auto;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 50%;
+}
+.inputarea{
+    width: 100vw;
+    height: 62vh;
+    transform: translateY(-62vh);
+}
+.itemlist li div{
+    width: 20vw;
+    height: 10vh;
+    background: #FF0036;
+    color: #fff;
+    text-align: center;
+    line-height: 10vh;
+    position: absolute;
+    right: -20vw;
+    top: 0;
+}
+.itemlist li span.active{
+    color: red;
+}
+.swiper-slide img{
+    width:100vw;
+    height: 30vh;
+}
